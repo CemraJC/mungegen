@@ -1,10 +1,12 @@
 document.addEventListener("DOMContentLoaded", function(){
 
     var out = document.querySelector('header');
+    var word_list = document.querySelector('aside');
     var button = document.querySelector('button');
-    var lengthSeed = document.querySelector('input');
+    var length_seed = document.querySelector('input');
 
-    var soundList = [
+    var generated_words = [];
+    var sound_list = [
         "mung",
         "bung",
         "wagga",
@@ -46,19 +48,24 @@ document.addEventListener("DOMContentLoaded", function(){
 
 
     button.addEventListener('click', function(){
-        out.innerHTML = wordGen();
+        var syllable_quantity = Math.min(Math.max(Math.round(Math.random() * length_seed.value), 2), 10);
+        var word = wordGen(syllable_quantity);
+
+
+        out.innerHTML = word;
+        generated_words.unshift("<p>" + word + "</p>");
+
+        word_list.innerHTML = generated_words.join("\n");
     })
 
 
-
-    function wordGen() {
-        var len = soundList.length - 1;
-        var wordLen = Math.min(Math.max(lengthSeed.value, 1), 10);
+    function wordGen(len) {
+        var array_len = sound_list.length - 1;
         var result = "";
 
-        for (var i = 0; i < wordLen; i++) {
-            var rand = Math.round(Math.random() * len);
-            result += soundList[rand];
+        for (var i = 0; i < len; i++) {
+            var rand = Math.round(Math.random() * array_len);
+            result += sound_list[rand];
         };
 
         return titleCase(result);

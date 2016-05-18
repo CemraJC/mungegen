@@ -6,11 +6,37 @@
 body {
     height: 100vh;
     display: flex;
-    flex-flow: column;
+    flex-flow: row;
     justify-content: center;
     align-items: center;
     text-align: center;
     font-family: Open-sans, Arial, sans-serif;
+}
+
+aside {
+    height: 20em;
+    overflow-y: auto;
+    padding: 0 1em;
+    line-height: 1.6;
+    font-size: 80%;
+    flex: 10%;
+
+}
+
+body aside p:first-child {
+    font-weight: bold;
+    font-style: normal;
+    color: #111;
+}
+
+aside p {
+    font-style: italic;
+    color: #999;
+}
+
+main {
+    flex: 90%;
+    flex-flow: column;
 }
 
 header {
@@ -36,7 +62,7 @@ button {
 }
 
 input[type="number"] {
-    margin: 0.8em 0;
+    margin: 2em 0;
     width: 3em;
     border: 1px solid #000;
     vertical-align: middle;
@@ -60,7 +86,7 @@ button:focus, input[type="number"]:focus {
 }
 
 footer {
-    margin: 3em 0;
+    margin: 2em 0;
     font-style: italic;
     font-family: Arial;
     color: #aaa;
