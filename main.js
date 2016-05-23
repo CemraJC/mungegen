@@ -12,14 +12,11 @@ document.addEventListener("DOMContentLoaded", function(){
     theme.addEventListener('click', function(){
         var msg = theme.innerHTML;
         if (msg == "Dark Theme") {
-            setDarkTheme();
+            document.body.setAttribute('class', 'dark');
             theme.innerHTML = 'Light Theme';
-            theme.style.background = "#E1E1E1";
-            theme.style.color = "#222";
         } else {
+            document.body.removeAttribute('class');
             theme.innerHTML = 'Dark Theme'
-            theme.style.background = "#1E1E1E";
-            theme.style.color = "#E1E1E1";
         };
     });
 
@@ -33,16 +30,6 @@ document.addEventListener("DOMContentLoaded", function(){
 
         word_list.innerHTML = generated_words.join("\n");
     });
-
-
-    function setDarkTheme(){
-        document.body.style.background = "#1a1a1a";
-        document.body.style.color = "#eee";
-        word_list.style.color = "#eee !important";
-        out.style.color = "#eee";
-        generate.style.boxShadow = "none";
-        theme.style.boxShadow = "none";
-    }
 
 });
 

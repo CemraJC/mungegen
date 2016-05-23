@@ -3,6 +3,54 @@
     margin: 0;
 }
 
+/* Normal Color Theme */
+body {background: #FEFEFE;}
+body aside p:first-child {color: #111;}
+aside p { color: #999; }
+header { color: #333; text-shadow: 0 0 1px #777777; }
+button[role=theme] {
+    background: #1E1E1E;
+    color: #E1E1E1;
+}
+button[role=generate] {
+    background: #E1E1E1;
+    font-weight: 600;
+}
+button[role=theme]:active {
+    background: #2B2B2B;
+}
+
+button[role=generate]:active {
+    background: #ccc;
+    border: 1px solid #000;
+    box-shadow: 0 1px 2px #888;
+}
+
+/* Dark Color Theme */
+body.dark { background: #1E1E1E; }
+body.dark body aside p:first-child { color: #F0F0F0; }
+body.dark aside p { color: #D8D8D8; }
+body.dark header { color: #FFFFFF; text-shadow: 0 0 1px #D9D9D9; }
+body.dark button[role=theme] {
+    background: #FFFFFF;
+    color: #292929;
+    box-shadow: none;
+}
+body.dark button[role=generate] {
+    background: #E1E1E1;
+    font-weight: 600;
+    box-shadow: none;
+}
+body.dark button[role=theme]:active {
+    background: #2B2B2B;
+}
+
+body.dark button[role=generate]:active {
+    background: #ccc;
+    border: 1px solid #000;
+}
+
+/* Layout and other styles */
 body {
     height: 100vh;
     display: flex;
@@ -20,18 +68,15 @@ aside {
     line-height: 1.6;
     font-size: 80%;
     flex: 10%;
-
 }
 
 body aside p:first-child {
     font-weight: bold;
     font-style: normal;
-    color: #111;
 }
 
 aside p {
     font-style: italic;
-    color: #999;
 }
 
 main {
@@ -43,10 +88,17 @@ header {
     display: block;
     padding: 1em;
     font-size: 300%;
-    color: #333;
-    text-shadow: 0 0 1px #666;
     font-family: Open-sans, Arial, sans-serif;
     font-weight: 600;
+}
+
+input[type="number"] {
+    margin: 2em 0;
+    width: 3em;
+    border: 1px solid #000;
+    vertical-align: middle;
+    border-radius: 0.3em;
+    padding: 0.2em;
 }
 
 button {
@@ -59,24 +111,6 @@ button {
     cursor: pointer;
 }
 
-button[role=theme] {
-    background: #1E1E1E;
-    color: #E1E1E1;
-}
-
-button[role=generate] {
-    background: #E1E1E1;
-    font-weight: 600;
-}
-
-input[type="number"] {
-    margin: 2em 0;
-    width: 3em;
-    border: 1px solid #000;
-    vertical-align: middle;
-    border-radius: 0.3em;
-    padding: 0.2em;
-}
 
 button:hover {
     border: 1px solid #777;
@@ -92,10 +126,7 @@ button[role=generate]:active {
     box-shadow: 0 1px 2px #888;
 }
 
-button:focus, input[type="number"]:focus {
-    outline: none;
-    border: 1px solid #FF4E00;
-}
+
 
 footer {
     margin: 2em 0;
@@ -107,7 +138,13 @@ footer {
     line-height: 1.4;
 }
 
+/* Focus Styles */
+button:focus, input[type="number"]:focus {
+    outline: none;
+    border: 1px solid #FF4E00;
+}
 
+/* Utility Styles */
 .grey {
     color: #999;
 }
