@@ -92,13 +92,17 @@ header {
     font-weight: 600;
 }
 
-input[type="number"] {
-    margin: 2em 0;
-    width: 3em;
+input[type="number"], select {
+    margin: 0.2em 0 0.3em 0;
     border: 1px solid #000;
     vertical-align: middle;
-    border-radius: 0.3em;
-    padding: 0.2em;
+    border-radius: 0.2em;
+    padding: 0.3em 0.6em;
+    cursor: pointer;
+}
+
+input[type="number"] {
+    width: 3em;
 }
 
 button {
@@ -139,7 +143,7 @@ footer {
 }
 
 /* Focus Styles */
-button:focus, input[type="number"]:focus {
+button:focus, input[type="number"]:focus, select:focus {
     outline: none;
     border: 1px solid #FF4E00;
 }
