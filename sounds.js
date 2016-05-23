@@ -1,39 +1,7 @@
-var sound_list = [
-    "mung",
-    "bung",
-    "wagga",
-    "mug",
-    "ah",
-    "bing",
-    "moo",
-    "wul",
-    "ngah",
-    "jng",
-    "dirp",
-    "oo",
-    "gum",
-    "ham",
-    "cung",
-    "ber",
-    "bla",
-    "bng",
-    "gngij",
-    "wig",
-    "wng",
-    "ng",
-    "iwg",
-    "jwig",
-    "gmi",
-    "jnigi",
-    "ikl",
-    "imn",
-    "igj",
-    "yu",
-    "yim",
-    "yur",
-    "ah",
-    "yji",
-    "ylu",
-    "yert",
-    "ygim"
-];
+var sound_list = {
+    consonant:
+    [  "be",   "ce",   "de",   "fe",   "ge",   "he",   "je",   "ke",   "le",   "me",   "ne",   "pe",   "qe",   "re",   "se",   "te",   "ve",   "we",   "xe",   "ye",   "ze",   "bi",   "ci",   "di",   "ei",   "fi",   "gi",   "hi",   "ji",   "ki",   "li",   "mi",   "ni",   "pi",   "qi",   "ri",   "si",   "ti",   "vi",   "wi",   "xi",   "yi",   "zi",   "bo",   "co",   "do",   "eo",   "fo",   "go",   "ho",   "jo",   "ko",   "lo",   "mo",   "no",   "po",   "qo",   "ro",   "so",   "to",   "vo",   "wo",   "xo",   "yo",   "zo",   "bu",   "cu",   "du",   "eu",   "fu",   "gu",   "hu",   "ju",   "ku",   "lu",   "mu",   "nu",   "pu",   "qu",   "ru",   "su",   "tu",   "vu",   "wu",   "xu",   "yu",   "zu",   "ba",   "ca",   "da",   "ea",   "fa",   "ga",   "ha",   "ja",   "ka",   "la",   "ma",   "na",   "pa",   "qa",   "ra",   "sa",   "ta",   "va",   "wa",   "xa",   "ya",   "za" ],
+
+    indigenous:
+    [  "be",   "ce",   "de",   "fe",   "ge",   "he",   "je",   "ke",   "le",   "ne",   "pe",   "re",   "se",   "we",   "ye",   "ze",   "bo",   "co",   "fo",   "go",   "ho",   "jo",   "ko",   "lo",   "mo",   "no",   "po",   "ro",   "so",   "to",   "wo",   "yo",   "zo",   "bu",   "cu",   "du",   "eu",   "ba",   "ca",   "da",   "ea",   "fa",   "ga",   "ha",   "ja",   "ka",   "la",   "ma",   "na",   "pa",   "ra",   "sa",   "ta",   "wa",   "ya",   "za",   "sh",   "ji",   "ja",   "jo",   "ju",   "je",   "jw",   "jr",   "jl",   "yt",   "yh",   "yp",   "yl",   "ng",   "ng",   "ng",   "ng",   "ng",   "ng",   "ng",   "bu",   "mu",   "mo",   "po",   "wsh",  "ko",   "kw",   "kj",   "ky",   "ha",   "rh"  ]
+};
