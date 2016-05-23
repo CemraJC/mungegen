@@ -50,8 +50,6 @@ header {
 }
 
 button {
-    background: #E1E1E1;
-    font-weight: 600;
     font-family: Open-sans, Arial, sans-serif;
     border: 1px solid #000;
     border-radius: 0.2em;
@@ -59,6 +57,16 @@ button {
     box-shadow: 0 2px 6px #888;
     transition: background 50ms, border 100ms;
     cursor: pointer;
+}
+
+button[role=theme] {
+    background: #1E1E1E;
+    color: #E1E1E1;
+}
+
+button[role=generate] {
+    background: #E1E1E1;
+    font-weight: 600;
 }
 
 input[type="number"] {
@@ -71,10 +79,14 @@ input[type="number"] {
 }
 
 button:hover {
-    border: 1px solid #333;
+    border: 1px solid #777;
 }
 
-button:active {
+button[role=theme]:active {
+    background: #2B2B2B;
+}
+
+button[role=generate]:active {
     background: #ccc;
     border: 1px solid #000;
     box-shadow: 0 1px 2px #888;
