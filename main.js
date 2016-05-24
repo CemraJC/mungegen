@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function(){
     });
 
     generate.addEventListener('click', function() {
-        var syllable_quantity = Math.min(Math.max(Math.round(Math.random() * length_seed.value), 2), 20);
+        var syllable_quantity = Math.min(Math.max(Math.ceil(Math.random() * length_seed.value * 1.5), length_seed.value), 20);
         var word = wordGen(syllable_quantity);
 
         out.innerHTML = word;

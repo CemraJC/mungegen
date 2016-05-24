@@ -16,25 +16,28 @@
     </header>
 
 
-    <button type="button" role="generate">Generate a word</button>
+    <button type="button" role="generate" autofocus>Generate a word</button>
     <button type="button" role="theme">Dark Theme</button>
     <br><br>
-    <p>
-        <i class="grey">Word Length Seed:</i>
-        <input type="number" name="length" value="4" max="20" min="1">
-        <br>
-        <i class="grey">Dialect:</i>
-        <select name="dialect">
-            <option value="consonant">Random</option>
-            <option value="indigenous">Indigenous</option>
-            <!--
-            <option value="consonant">Japanese</option>
-            <option value="consonant">German</option>
-            <option value="consonant">Russian</option>
-            <option value="consonant">Western</option>
-            -->
-        </select>
-    </p>
+
+    <div class="settings">
+        <div>
+            <span class="grey">Word Length Seed:</span>
+            <input type="number" name="length" value="3" max="20" min="1">
+            <br>
+            <span class="grey">Dialect:</span>
+            <select name="dialect">
+                <option value="consonant">Random</option>
+                <option value="indigenous">Indigenous</option>
+                <!--
+                <option value="consonant">Japanese</option>
+                <option value="consonant">German</option>
+                <option value="consonant">Russian</option>
+                <option value="consonant">Western</option>
+                -->
+            </select>
+        </div>
+    </div>
 
     <footer>
         <p class="author">Made by Jason Cemra</p>

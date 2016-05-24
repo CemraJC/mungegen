@@ -1,3 +1,6 @@
+
+
+
 * {
     padding: 0;
     margin: 0;
@@ -59,7 +62,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-family: Open-sans, Arial, sans-serif;
+    font-family: Trebuchet MS, Arial, sans-serif;
 }
 
 aside {
@@ -86,6 +89,15 @@ body aside p:first-child {
     font-style: normal;
 }
 
+main .settings div {
+    margin: 0;
+    padding: 0.48em;
+    border: 2px solid #020202;
+    border-radius: 0.2em;
+    display: inline-block;
+    text-align: left;
+}
+
 aside p {
     font-style: italic;
 }
@@ -100,7 +112,6 @@ header {
     margin-bottom: 1em;
     padding: 0.6em;
     font-size: 300%;
-    font-family: Open-sans, Arial, sans-serif;
     font-weight: 600;
     letter-spacing: 0.05em;
 }
@@ -119,7 +130,6 @@ input[type="number"] {
 }
 
 button {
-    font-family: Open-sans, Arial, sans-serif;
     border: 1px solid #000;
     border-radius: 0.2em;
     padding: 0.5em 0.8em;
