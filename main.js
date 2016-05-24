@@ -67,13 +67,19 @@ document.addEventListener("DOMContentLoaded", function(){
     }
 
     function wordGen(len) {
-        var array_len = sound_list[dialect.value].length - 1;
+        var body_len = sound_list[dialect.value]["body"].length - 1;
+        var ending_len = sound_list[dialect.value]["ending"].length - 1;
         var result = "";
 
-        for (var i = 0; i < len; i++) {
-            var rand = Math.round(Math.random() * array_len);
-            result += sound_list[dialect.value][rand];
+
+        for (var i = 0; i < len - 1; i++) {
+            var rand = Math.round(Math.random() * body_len);
+            console.log(sound_list[dialect.value]["body"][rand], rand);
+            result += sound_list[dialect.value]["body"][rand];
         };
+
+        // Add a random ending
+        result += sound_list[dialect.value]["ending"][Math.round(Math.random() * ending_len)];
 
         return titleCase(result);
     }
