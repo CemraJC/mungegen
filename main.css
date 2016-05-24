@@ -203,3 +203,11 @@ body.dark ::-webkit-scrollbar-track {
   background: #111;
   box-shadow: 0 0 5px #000 inset;
 }
+
+/* Responsive Modifications */
+
+@media screen and (max-width: 38em) {
+    aside {
+        display: none;
+    }
+}
